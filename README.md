@@ -1,4 +1,4 @@
-# NLP-tasks
+# Twitter Analysis
 There are 3 problem handled by this solution:  
 
 1> find the trending topics about celebrity
