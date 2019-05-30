@@ -11,8 +11,8 @@ from dask.dataframe.multi import required
 # initializing the input files
 phrase_filepath = "./data/record_data_tweet.csv"
 tweet_file = "./data/tweets.txt"
-#all_phrasefile_path="./data/textrank_data_tweet.csv"
-all_phrasefile_path="./data/record_data_tweet.csv"
+all_phrasefile_path="./data/textrank_data_tweet.csv"
+#all_phrasefile_path="./data/record_data_tweet.csv"
 
 # initializing the output file
 synonyms_path = './results/synonyms.json'
@@ -83,7 +83,7 @@ if __name__ == "__main__":
         new_data = text_preprocessing(text,False)
         new_df_tweet, cleaned_df_tweet = extract_phrasesfrom_textrank(new_data)
         cleaned_df_tweet.to_csv(phrase_filepath, sep=',', encoding='utf-8', index=False)
-        new_df_tweet
+
 
     # read the phrases file extracted from textrank algorithm
     cleaned_df_tweet = pd.read_csv(phrase_filepath)
